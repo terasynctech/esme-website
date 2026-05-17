@@ -1,10 +1,22 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>ESME International | Engineering Solutions</title>
+
+<!-- WEBSITE LOGO -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- SOCIAL MEDIA PREVIEW -->
+<meta property="og:title" content="ESME International">
+<meta property="og:description" content="Advanced Engineering & Digital Solutions">
+<meta property="og:image" content="https://terasynctech.github.io/esme-website/images/logo.png">
+<meta property="og:url" content="https://terasynctech.github.io/esme-website/">
+<meta property="og:type" content="website">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -23,10 +35,12 @@ body{
     line-height:1.6;
 }
 
+/* HEADER */
+
 header{
     background:#071c2f;
     color:white;
-    padding:20px 8%;
+    padding:15px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -35,15 +49,34 @@ header{
     z-index:1000;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#fff;
+/* LOGO AREA */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.logo span{
+.logo-area img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    border-radius:50%;
+    background:white;
+    padding:4px;
+}
+
+.logo-area h2{
+    color:white;
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo-area span{
     color:#f4b400;
 }
+
+/* NAVIGATION */
 
 nav a{
     color:white;
@@ -56,6 +89,8 @@ nav a{
 nav a:hover{
     color:#f4b400;
 }
+
+/* HERO SECTION */
 
 .hero{
     height:90vh;
@@ -85,6 +120,8 @@ nav a:hover{
     margin-bottom:30px;
 }
 
+/* BUTTON */
+
 .btn{
     display:inline-block;
     background:#f4b400;
@@ -100,6 +137,8 @@ nav a:hover{
     background:white;
 }
 
+/* GENERAL SECTION */
+
 section{
     padding:80px 8%;
 }
@@ -114,6 +153,8 @@ section{
     color:#071c2f;
     margin-bottom:10px;
 }
+
+/* ABOUT */
 
 .about{
     display:grid;
@@ -132,6 +173,8 @@ section{
     margin-bottom:20px;
     color:#071c2f;
 }
+
+/* SERVICES */
 
 .services{
     display:grid;
@@ -156,6 +199,8 @@ section{
     color:#071c2f;
 }
 
+/* CONTACT */
+
 .contact{
     background:#071c2f;
     color:white;
@@ -168,13 +213,22 @@ section{
     margin-bottom:20px;
 }
 
+/* FOOTER */
+
 footer{
     background:#04111d;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
     margin-top:40px;
 }
+
+footer a{
+    color:#f4b400;
+    text-decoration:none;
+}
+
+/* WHATSAPP */
 
 .whatsapp{
     position:fixed;
@@ -182,16 +236,18 @@ footer{
     bottom:20px;
     background:#25D366;
     color:white;
-    width:60px;
-    height:60px;
+    width:65px;
+    height:65px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:30px;
+    font-size:32px;
     text-decoration:none;
     box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -207,6 +263,10 @@ footer{
         display:none;
     }
 
+    .logo-area h2{
+        font-size:24px;
+    }
+
 }
 
 </style>
@@ -214,10 +274,18 @@ footer{
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-<div class="logo">
+<div class="logo-area">
+
+<img src="images/logo.png" alt="ESME Logo">
+
+<h2>
 ESME <span>International</span>
+</h2>
+
 </div>
 
 <nav>
@@ -228,6 +296,8 @@ ESME <span>International</span>
 </nav>
 
 </header>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -245,6 +315,8 @@ and industrial solutions across GCC and international markets.
 </div>
 
 </section>
+
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -279,6 +351,8 @@ mechanical, instrumentation, and industrial engineering.
 </div>
 
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
 
@@ -341,6 +415,8 @@ Surveying and Construction Support Services.
 
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
 
 <div class="contact">
@@ -360,13 +436,26 @@ Send Email
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
 
 <p>
 © 2026 ESME International. All Rights Reserved.
 </p>
 
+<br>
+
+<p>
+Powered By 
+<a href="https://www.terasynctech.com" target="_blank">
+Terasynch Tech
+</a>
+</p>
+
 </footer>
+
+<!-- WHATSAPP -->
 
 <a class="whatsapp" href="https://wa.me/919006314337" target="_blank">
 ☎
